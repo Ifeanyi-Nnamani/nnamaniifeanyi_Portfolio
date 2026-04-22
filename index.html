@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ifeanyi Nnamani-Portfolio</title>
+    <link rel="stylesheet" href="./css/stlye.css">
+    <!-- Google Fonts -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <!-- 1. Sticky Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="loader"></div>
+            <div class="logo">IFEANYI NNAMANI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+             <!-- small screens -->
+            <div class="mobile">
+                <!-- Mobile hamburger -->
+                <button> 
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Mobile dropdown -->
+                <ul class="mobile-dropdown">
+                    <li> <a href="#home">Home</a> </li>
+                    <li> <a href="#about">About</a> </li>
+                    <li> <a href="#skills">Skills</a> </li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+        </nav>
+    
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="./image/nnamani.jpg" alt="Your Name" class="about-img">
+            <h1>Hello, I'm <span>Ifeanyi Nnamani</span></h1>
+            <p>Web Developer | Tech Enthusiast | Life long Learner | Educational Psychologist
+
+</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <!-- 2. About  Section -->
+   <section class="about-me" id="about">
+    <div class="about-container">
+        <!-- Photo on one side -->
+        <div class="about-image">
+            <img src="./image/ifeanyi.jpg" alt="Professional Photo" class="profile-pic">
+        </div>
+        
+        <!-- Text on the other side -->
+        <div class="about-text">
+            <h2>Who I Am</h2>
+            <p>I am a seasoned Computer Instructor and Educational Psychologist with extensive experience advancing academic excellence through the strategic integration of technology, innovation, and educational research.
+             <h3>Background</h3>
+             With a high interdisciplinary background, blending the technical, analytical skills of a Computer Scientist with the behavioral, cognitive, and developmental understanding of an Educational Psychologist.</p>
+            <p> This unique combination placed me at the intersection of human-computer interaction (HCI), educational technology (EdTech), and data-driven learning analytics, I bring a unique perspective to building user-centric digital experiences.</p>
+            <h3>Core interests</h3>
+            <p>I enjoy solving complex problems, learning new technologies, and crafting clean, responsive code. My interests include: [Digital literacy & ICT training], [Curriculum development & instructional design], and creating interactive web applications.</p>
+
+            <h3>Why am I learning web development?</h3>
+            <p> I am  learning web development to transform static digital tools into interactive learning or behavioral experiences, combining the "how" (CS) with the "why" (Psychology). I am highly motivated by the continuous innovation in this field.</p>
+        </div>
+    </div>
+</section>
+    <!-- 4. Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-card"><i class="fas fa-th-large"></i> Grid/Flexbox</div>
+            <div class="skill-card"><i class="fa-brands fa-github"></i> Git/GitHub</div>
+            <div class="skill-card"><i class="fas fa-code"></i> VS Code</div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="./image/cbt.jpg" alt="CBT">
+                <h3>Computer Based Test Web-Page</h3>
+                <p>A responsive Webpage for Digital Literacy Computer Based Test.</p>
+                <a href="https://ifeanyi-nnamani.github.io/-Computer--Based-Test/" target="_blank" rel="noopener noreferrer" class="btn-sm">View Live</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="./image/programs.jpg" alt="Online learning Site">
+                <h3>Oniline Learning Website</h3>
+                <p>An in-progress online Learning site with an interactive menu site using HTML and CSS.</p>
+                <a href="https://ifeanyi-nnamani.github.io/Digital-Concept/"target="_blank"  rel="noopener noreferrer" class="btn-sm">View Live</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="./image/education.jpg"alt="School-portal">
+                <h3>School Portal</h3>
+                <p>An in-progress project for School-portal.</p>
+                <a href="https://ifeanyi-nnamani.github.io/school-page/"target="_blank" rel="noopener norererrer"  class="btn-sm">View Live</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="http://linkedin.com/in/ifeanyi-nnamani-m-ed-pgde-b-sc-882906174" target="_blank" class="linkedln-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Ifeanyi-Nnamani" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer>
+        <p> &copy; 2026 Ifeanyi Nnamani. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
