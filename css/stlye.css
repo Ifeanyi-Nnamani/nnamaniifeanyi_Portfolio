@@ -117,31 +117,7 @@ header {
         width: 0ch;;
     }
 }
-========================================
-   MOBILE NAVIGATION DROPDOWN
-   ======================================== */
 
-/* Mobile dropdown menu */
-.mobile ul.mobile-dropdown {
-    position: absolute; /* Position relative to the nearest positioned ancestor (nav) */
-    right: 0; /* Align to the right edge */
-    top: 100%; /* Position just below the header (100% of header height) */
-    background-color: #f6f6f6; /* Same light gray as header */
-    border-left: 1px solid rgba(0, 0, 0, 0.3); /* Left border */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3); /* Bottom border */
-    border-top: 1px solid rgba(0, 0, 0, 0.3); /* Top border */
-    width: 60%; /* 60% of parent width */
-    max-width: 12rem; /* Maximum width of 192px */
-    height: calc(100vh - 4.5rem); /* Full viewport height minus header height */
-    padding: 2rem 1rem; /* 2rem (32px) top/bottom, 1rem (16px) left/right */
-    display: none; /* Hidden by default (will show with JavaScript) */
-    flex-direction: column; /* Stack items vertically when visible */
-    gap: 1.5rem; /* 24px space between menu items */
-}
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
 
 .nav-links a:hover {
     color: var(--primary);
@@ -171,47 +147,41 @@ header {
 }
 
 /* --- 3. About --- */
-.about-me {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-}
-
-.about-container {
-    max-width: 1100px;
-    margin: 0 auto;
+/* ABOUT SECTION */
+#about {
+    padding: 60px 20px;
     display: grid;
-    /* Two equal columns by default */
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items:center;
 }
 
-.profile-pic {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 50%; /* Circle image */
-    display: block;
-    margin: 0 auto;
-    border: 5px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.About-me,
+.background,
+.image {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-
-}
-
-.about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+#about h2 {
     margin-bottom: 15px;
-    color: #555;
-    text-align: justify;
+    color: #0f172a;
 }
 
+#about h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#about ul {
+    padding-left: 20px;
+}
+
+.learn {
+    margin-top: 15px;
+    font-style: italic;
+    color: #555;
+}
 /* Mobile Responsive - Single Column */
 @media (max-width: 768px) {
     .about-container {
@@ -340,137 +310,4 @@ footer {
     padding: 30px;
     background: var(--dark);
     color: white;
-}
-
-/* ========================================
-   MEDIA QUERIES - TABLET SCREENS
-   ======================================== */
-
-/* Styles for screens 768px and wider (tablets and small desktops) */
-@media (min-width: 768px) {
-    
-    /* HERO SECTION */
-    .hero p {
-        font-size: 1.3rem; /* Increase paragraph size to 20.8px */
-    }
-
-    .hero {
-        min-height: 60vh; /* Reduce hero height to 60% of viewport height */
-    }
-
-    /* FEATURES SECTION */
-    .features-content {
-        grid-template-columns: repeat(3, 1fr); /* 3 equal columns (1fr each) */
-        grid-template-rows: auto; /* Single row with automatic height */
-    }
-
-    /* PRICING SECTION */
-    .pricing-content {
-        flex-direction: row; /* Display cards side-by-side horizontally */
-    }
-
-    .pricing-content article {
-        width: calc(100% / 3); /* Each card takes 1/3 of container width */
-    }
-
-    /* CONTACT SECTION */
-    .first-last,
-    .email-course {
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-    }
-
-    .contact button {
-        align-self: center; /* Center submit button horizontally */
-    }
-
-} 
-
-/* ========================================
-   MEDIA QUERIES - DESKTOP SCREENS
-   ======================================== */
-
-/* Styles for screens 1000px and wider (desktops) */
-@media (min-width: 1000px) {
-    
-    /* Hide mobile navigation */
-    .mobile {
-        display: none; /* Completely hide mobile menu */
-    }
-
-    /* Show desktop sign up button */
-    header nav > a {
-        display: inline-block; /* Make button visible */
-    }
-
-    /* Show desktop navigation links */
-    header .desktop-nav-links {
-        display: flex; /* Use flexbox for horizontal menu */
-        gap: 2rem; /* 32px space between menu items */
-    }
-
-    /* Desktop navigation link styles */
-    header .desktop-nav-links a {
-        color: black; /* Black text */
-        font-weight: 600; /* Semi-bold text */
-        font-size: 0.95rem; /* 15.2px font size */
-    }
-
-    /* Hover effect on desktop nav links */
-    header .navbar a:hover {
-        color: blue; /* Change text color to blue on hover */
-    }
-
-   
-
-    /* Desktop sign up button */
-    header nav > a {
-        background-color: blue; /* Blue background */
-        color: white; /* White text */
-        padding: 0.5rem 2rem; /* 8px top/bottom, 32px left/right */
-        border-radius: 10px; /* Rounded corners */
-        transition: filter 0.3s ease-in-out; /* Smooth brightness change (0.3 seconds) */
-    }
-
-    /* Hover effect on sign up button */
-    header nav > a:hover {
-        filter: brightness(90%); /* Darken to 90% brightness on hover */
-    }
-
-
-    /* HERO SECTION */
-    .hero h1 {
-        font-size: 3.5rem; /* Increase heading size to 56px */
-    }
-}
-
-/* ========================================
-   MEDIA QUERIES - LARGE DESKTOP SCREENS
-   ======================================== */
-
-/* Styles for screens 1500px and wider (large desktops) */
-@media (min-width: 1500px) {
-    
-    /* Center and constrain navigation bar width */
-    header nav {
-        width: 80%; /* Navigation takes 80% of header width */
-        max-width: 80rem; /* Maximum width of 1280px */
-        margin: 0 auto; /* Center navigation (0 top/bottom, auto left/right) */
-    }
-}
-/* --- Responsive Media Queries --- */
-/* Styles for screens 1000px and wider (desktops) */
-@media (min-width: 1000px) {
-    
-    /* Hide mobile navigation */
-    .mobile {
-        display: none; /* Completely hide mobile menu */
-    }
-
-    
-    .about-container, .contact-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .hero h1 { font-size: 2.2rem; }
 }
