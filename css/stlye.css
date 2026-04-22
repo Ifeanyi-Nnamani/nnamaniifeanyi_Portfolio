@@ -416,28 +416,11 @@ footer {
     }
 
     /* Hover effect on desktop nav links */
-    header .desktop-nav-links a:hover {
+    header .navbar a:hover {
         color: blue; /* Change text color to blue on hover */
     }
 
-    /* Third menu item (has dropdown) */
-    .desktop-nav-links li:nth-child(3) {
-        position: relative; /* Allows absolute positioning of dropdown */
-        margin-bottom: 0.2rem; /* 3.2px bottom margin */
-    }
-
-    /* DESKTOP DROPDOWN MENU */
-    .desktop-nav-links ul {
-        position: absolute; /* Position relative to parent li */
-        left: 0; /* Align to left edge of parent */
-        display: none; /* Hidden by default */
-        flex-direction: column; /* Stack dropdown items vertically */
-        gap: 1rem; /* 16px space between items */
-        background-color: #f6f6f6; /* Light gray background */
-        width: fit-content; /* Width adjusts to content */
-        padding: 2rem 1.5rem; /* 32px top/bottom, 24px left/right */
-        border: 1px solid rgba(0, 0, 0, 0.1); /* Very light border (10% opacity) */
-    }
+   
 
     /* Desktop sign up button */
     header nav > a {
@@ -453,10 +436,6 @@ footer {
         filter: brightness(90%); /* Darken to 90% brightness on hover */
     }
 
-    /* Show dropdown on hover */
-    .desktop-nav-links li:nth-child(3):hover ul {
-        display: flex; /* Make dropdown visible when parent is hovered */
-    }
 
     /* HERO SECTION */
     .hero h1 {
