@@ -44,10 +44,7 @@ html {
 }
 
 
-img {
-    max-width: 100%;
-    display: block;
-}
+
 h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--dark);
@@ -75,7 +72,7 @@ img {
     padding: 10px 20px;
     background: var(--primary);
     color: white;
-    border-radius: 1px;
+    border-radius: 5px;
     margin-top: 15px;
 }
 
@@ -149,6 +146,7 @@ nav {
 .logo span {
     font-size: 1.2rem;
     font-weight: bold;
+    
 }
 
 .desktop-nav-links {
@@ -218,7 +216,7 @@ nav {
 }
 
 #home img {
-    border-radius: 50%;
+    border-radius: 20%;
     margin: 20px auto;
 }
 
@@ -256,7 +254,7 @@ nav {
 }
 
 .hero span {
-    color:#1e293b;
+    color:brown;
 }
 /* ABOUT SECTION */
 #about {
@@ -273,6 +271,11 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+.image:hover{
+     scale: 1.10;
+    filter: grayscale(0.5);
+}
+
 
 #about h2 {
     margin-bottom: 15px;
