@@ -1,4 +1,14 @@
-/* --- General Styles --- */
+SS
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+    /* --- General Styles --- */
 :root {
     --primary: #2563eb;
     --dark: #1f2937;
@@ -6,12 +16,6 @@
     --text: #333;
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -39,6 +43,11 @@ html {
     }
 }
 
+
+img {
+    max-width: 100%;
+    display: block;
+}
 h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--dark);
@@ -56,7 +65,7 @@ ul {
 
 img {
     max-width: 50%;
-    border: 5px solid #fff;
+    border: 3px solid #fff;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -66,7 +75,7 @@ img {
     padding: 10px 20px;
     background: var(--primary);
     color: white;
-    border-radius: 5px;
+    border-radius: 1px;
     margin-top: 15px;
 }
 
@@ -124,7 +133,111 @@ header {
    
 }
 
-/* --- 2. Hero --- */
+/* NAVBAR */
+header {
+    background: #0f172a;
+    color: #fff;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.desktop-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.desktop-nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.desktop-nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* MOBILE NAV */
+.mobile {
+    display: none;
+}
+
+.mobile button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.mobile-dropdown {
+    display: none;
+    list-style: none;
+    background: #1e293b;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.mobile-dropdown li {
+    margin-bottom: 10px;
+}
+
+.mobile-dropdown a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+#home {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0ea5e9, #6366f1);
+    color: #fff;
+    position: relative;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#home p {
+    margin-bottom: 20px;
+}
+
+#home img {
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* BUTTON */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #0ea5e9;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #0f172a;
+    color: #fff;
+}
 .hero {
     height: 90vh;
     display: flex;
@@ -143,10 +256,8 @@ header {
 }
 
 .hero span {
-    color: var(--primary);
+    color:#1e293b;
 }
-
-/* --- 3. About --- */
 /* ABOUT SECTION */
 #about {
     padding: 60px 20px;
@@ -182,15 +293,8 @@ header {
     font-style: italic;
     color: #555;
 }
-/* Mobile Responsive - Single Column */
-@media (max-width: 768px) {
-    .about-container {
-        grid-template-columns: 1fr; /* Switch to one column */
-        text-align: center;
-    }
-}
 
-/* --- 4. Skills --- */
+/* SKILLS */
 .skills {
     background: var(--light);
 }
@@ -302,12 +406,60 @@ input, textarea {
     gap: 15px;
     font-size: 1.2rem;
 }
-
-
-/* --- 7. Footer --- */
 footer {
     text-align: center;
     padding: 30px;
     background: var(--dark);
     color: white;
 }
+
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+    #about {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-nav-links {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+
+
+.cta-button {
+    background-color: #007bff; /* Primary blue */
+    color: white;
+    padding: 12px 24px;
+   
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    flex-direction:column;
+   
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  .About-me p{
+    text-align: justify;
+  }
+  .background p{
+    text-align: justify;
+  }
+  .more-about-me{
+    text-align: justify;
+  }
+  details p{
+    text-align: justify;
+  }

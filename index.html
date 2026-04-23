@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ifeanyi Nnamani-Portfolio</title>
+    <title>My Personal Profile - Ifeanyi Nnamani</title>
     <link rel="stylesheet" href="./css/stlye.css">
-    <!-- Google Fonts -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+     <!-- Navigation Bar -->
+       <header>
+        <nav>
+            <div class="logo">
+                 <div class="loader"></div>
+                <span>Ifeanyi Nnamani</span>
+            </div>
 
-    <!-- 1. Sticky Navigation -->
-    <header>
-        <nav class="navbar">
-            <div class="loader"></div>
-            <div class="logo">IFEANYI NNAMANI</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="desktop-nav-links">
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#skills">Skills</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+                    
             </ul>
-             <!-- small screens -->
+
+            
+
+            <!-- small screens -->
             <div class="mobile">
                 <!-- Mobile hamburger -->
                 <button> 
@@ -37,48 +40,81 @@
                     <li> <a href="#home">Home</a> </li>
                     <li> <a href="#about">About</a> </li>
                     <li> <a href="#skills">Skills</a> </li>
-                    <li> <a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
-    
-        </div>
     </header>
 
-    <!-- 2. Hero Section -->
-    <section id="home" class="hero">
+    <main>
+              <!--Hero Section-->  
+              <section id="home" class="hero">
         <div class="hero-content">
             <img src="./image/nnamani.jpg" alt="Your Name" class="about-img">
             <h1>Hello, I'm <span>Ifeanyi Nnamani</span></h1>
             <p>Web Developer | Tech Enthusiast | Life long Learner | Educational Psychologist
 
-</p>
+            </p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
-    </section>
-    <!-- 2. About  Section -->
-   <section class="about-me" id="about">
-    <div class="about-container">
-        <!-- Photo on one side -->
-        <div class="about-image">
-            <img src="./image/ifeanyi.jpg" alt="Professional Photo" class="profile-pic">
-        </div>
-        
-        <!-- Text on the other side -->
-        <div class="about-text">
-            <h2>Who I Am</h2>
-            <p>I am a seasoned Computer Instructor and Educational Psychologist with extensive experience advancing academic excellence through the strategic integration of technology, innovation, and educational research.
-             <h3>Background</h3>
-             With a high interdisciplinary background, blending the technical, analytical skills of a Computer Scientist with the behavioral, cognitive, and developmental understanding of an Educational Psychologist.</p>
-            <p> This unique combination placed me at the intersection of human-computer interaction (HCI), educational technology (EdTech), and data-driven learning analytics, I bring a unique perspective to building user-centric digital experiences.</p>
-            <h3>Core interests</h3>
-            <p>I enjoy solving complex problems, learning new technologies, and crafting clean, responsive code. My interests include: [Digital literacy & ICT training], [Curriculum development & instructional design], and creating interactive web applications.</p>
-
+        </section>
+        </main>
+        <!--About-->
+        <section id="about">
+            <div class="About-me">
+                <h2>About Me</h2>
+                <p>
+                    I am a seasoned Computer Instructor and Educational Psychologist with extensive experience advancing academic excellence through the strategic integration of technology, innovation, and educational research.
+                </p>
+                <p>I bring strong expertise in computer programming, full-stack web development, curriculum design, and educational consultation, with a proven ability to translate complex concepts into learner-friendly, practical outcomes.</p>
+                <p>I am open to teaching, training, research, EdTech, and educational consultancy opportunities that align technology with meaningful learning outcomes.</p>
+            </div>
+            <div class="background">
+            <h2>My background, interests, and what motivates me</h2>
+            <h3>Background</h3>
+            <p>My background is highly interdisciplinary, blending the technical, analytical skills of a Computer Scientist with the behavioral, cognitive, and developmental understanding of an Educational Psychologist. This unique combination placed me at the intersection of human-computer interaction (HCI), educational technology (EdTech), and data-driven learning analytics.</p>
+            <h3>Core interests include</h3>
+            <ul>
+                <li>Digital literacy & ICT training</li>
+                <li>Curriculum development & instructional design</li>
+                <li> Educational research & program evaluation</li>
+                <li>Web development & emerging technologies</li>
+                <li>Mentorship, learning psychology & academic coaching</li>
+            </ul>
             <h3>Why am I learning web development?</h3>
-            <p> I am  learning web development to transform static digital tools into interactive learning or behavioral experiences, combining the "how" (CS) with the "why" (Psychology). I am highly motivated by the continuous innovation in this field.</p>
+            <p class="more-about-me"> I am  learning web development to transform static digital tools into interactive learning or behavioral experiences, combining the "how" (CS) with the "why" (Psychology).</p>
+            <h3>Here is why my combination of backgrounds makes me uniquely positioned for high-value web development, particularly in specialized fields:</h3>
+            <ul>
+<details>
+  <summary>The Intersection of Human Behavior and Code (UX/UI)</summary>
+    <p>Educational Psychology + Web: I understands  how people learn, +focus, interact, and feel frustration. This is the foundation of User Experience (UX) and Human-Computer Interaction (HCI).</p>
+    <p>Computer Science + Web: I You can build web applications that are not just functional, but psychologically designed for engagement and accessibility</p>
+
+</details>
+<details>
+    <summary>High-Demand Niche Careers</summary>
+    <p>My educational background makes me a perfect candidate for specialized roles that pure software engineers often lack the pedagogical knowledge to fill, including:</p>
+    <ul>
+    <p><li>EdTech Developer: Creating learning management systems (LMS), online courses, and educational games.</li>
+        <li>Educational Content Developer: Building interactive tools that align with cognitive development stages.</li>
+        <li>UX Researcher/Designer: Using your psychology skills to run user studies and your CS skills to implement the findings.</li>
+    </p>
+    </ul>
+</details>
+    
+
         </div>
-    </div>
-</section>
-    <!-- 4. Skills Section -->
+            <div class="image">
+                <div> <img src="./image/nnamani.jpg" alt="my Photo" width="150"></div>
+                <div class="learn">"Do the best you can until you know better. Then when you know better, do better" (Maya Angelou)</div>
+               
+            </div>
+        </section>
+
+        <!-- Skills Section-->
+         
+        <!-- 4. Skills Section -->
     <section id="skills" class="skills">
         <h2>My Skills</h2>
         <div class="skills-grid">
@@ -90,8 +126,7 @@
             <div class="skill-card"><i class="fas fa-code"></i> VS Code</div>
         </div>
     </section>
-
-    <!-- 5. Projects Section -->
+        <!-- 5. Projects Section -->
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="projects-grid">
@@ -140,6 +175,14 @@
     <footer>
         <p> &copy; 2026 Ifeanyi Nnamani. All rights reserved.</p>
     </footer>
+
+                
+        
+    
+
+   
+
+                
 
 </body>
 </html>
