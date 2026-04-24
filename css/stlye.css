@@ -318,15 +318,17 @@ nav {
     border-radius: 10px;
     font-weight: 600;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
+   
 }
 
 
 
+.skill-card {
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
 .skill-card:hover {
-    transform: translateY(5px);
-    transition: 1s;
-    
+  transform: scale(1.5);
 }
 
 
@@ -354,17 +356,13 @@ nav {
     transition: 0.3s;
 }
 
-.project-card img {
-    height: 200px;
-    width: 100%;
-    object-fit:cover;
-}
 .project-card :hover{
      transform: translateX(5px);
      transition: 2s;
     
 
 }
+
 
 .project-card h3, .project-card p {
     padding: 10px 20px;
