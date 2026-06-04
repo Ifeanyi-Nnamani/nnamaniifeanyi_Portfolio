@@ -12,7 +12,7 @@
     --primary: #2563eb;
     --dark: #1f2937;
     --light: #f3f4f6;
-    --text: #333;
+  
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
 }
@@ -146,7 +146,7 @@ header {
 .mobile button {
     font-size: 1.1rem; /* 17.6px font size */
 }
-.nav-links a:hover {
+.desktop-nav-links a:hover {
     color: var(--primary);
    
 }
@@ -177,9 +177,11 @@ nav {
 
 .desktop-nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     transition: 0.3s;
     font-weight: 700;
+    font-size: larger;
+    background-color: white;
 }
 
 .desktop-nav-links a:hover {
